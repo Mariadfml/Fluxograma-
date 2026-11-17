@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechPath — Fluxograma Interativo (8 Perguntas)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <span>⚡ TechPath</span>
+      <span class="badge">Matemática II • 3º Ano</span>
+    </div>
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab('interactive')">Fluxograma Interativo</button>
+      <button class="tab-btn" onclick="switchTab('diagram')">Mapa das 8 Perguntas</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ABA 1: FLUXOGRAMA INTERATIVO -->
+    <section id="interactive-view" class="view-section active">
+      <div class="progress-wrapper">
+        <div class="progress-info">
+          <span id="progress-label">Progresso do Fluxograma</span>
+          <span id="progress-count">Pergunta 1 de 8</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progress-fill" style="width: 12.5%;"></div>
+        </div>
+      </div>
+
+      <div class="trail-container" id="trail">
+        <span class="trail-step">🚀 Início</span>
+      </div>
+
+      <div class="flow-card" id="flow-card">
+        <!-- Conteúdo dinâmico via JS -->
+      </div>
+    </section>
+
+    <!-- ABA 2: VISÃO GERAL DAS 8 PERGUNTAS -->
+    <section id="diagram-view" class="view-section">
+      <div class="flow-card" style="max-width: 960px;">
+        <span class="node-tag">Algoritmo de Decisão • 8 Etapas</span>
+        <h2 class="node-question" style="font-size: 1.4rem;">Mapa Lógico de 8 Perguntas</h2>
+        <p class="node-desc">Cada pergunta funciona como um nó de decisão que direciona o fluxo e soma pesos para definir sua área ideal na tecnologia.</p>
+
+        <div class="steps-overview">
+          <div class="step-box">
+            <small>PERGUNTA 01 • INTERESSE PRINCIPAL</small>
+            <strong>O que mais chama sua atenção na tecnologia?</strong>
+            <span>Define o ramo inicial: Visual/Interfaces, Lógica/Sistemas ou Hardware/Segurança.</span>
+          </div>
+          <div class="step-box">
+            <small>PERGUNTA 02 • ESTILO DE RESOLUÇÃO</small>
+            <strong>Como você prefere resolver um problema complexo?</strong>
+            <span>Desenhando protótipos visuais, escrevendo algoritmos ou testando vulnerabilidades.</span>
+          </div>
+          <div class="step-box">
+            <small>PERGUNTA 03 • FERRAMENTA FAVORITA</small>
+            <strong>Qual tipo de ferramenta você mais gostaria de dominar?</strong>
+            <span>Editores de design, bancos de dados/IA ou placas eletrônicas e redes.</span>
+          </div>
+          <div class="step-box">
+            <small>PERGUNTA 04 • AMBIENTE DE TRABALHO</small>
+            <strong>Onde você prefere que seu trabalho apareça?</strong>
+            <span>Direto na tela do usuário, nos servidores invisíveis ou em objetos físicos.</span>
+          </div>
+          <div class="step-box">
+            <small>PERGUNTA 05 • MATEMÁTICA & DADOS</small>
+            <strong>Qual sua relação com estatística, gráficos e padrões?</strong>
+            <span>Define inclinação para Ciência de Dados, Inteligência Artificial ou Design.</span>
+          </div>
+          <div class="step-box">
+            <small>PERGUNTA 06 • SEGURANÇA & RISCO</small>
+            <strong>O que você faria ao encontrar uma falha em um sistema?</strong>
+            <span>Corrigir o visual, otimizar o código ou investigar como bloquear invasores.</span>
+          </div>
+          <div class="step-box">
+            <small>PERGUNTA 07 • IMPACTO DO PROJETO</small>
+            <strong>Qual projeto deixaria você mais orgulhoso(a)?</strong>
+            <span>Um app viral, um robô autônomo, uma IA inteligente ou um sistema blindado.</span>
+          </div>
+          <div class="step-box">
+            <small>PERGUNTA 08 • DECISÃO FINAL</small>
+            <strong>Na reta final de um projeto, qual é sua prioridade máxima?</strong>
+            <span>Beleza e usabilidade, velocidade e inteligência, ou proteção total.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Desenvolvido para a disciplina de Matemática II • Lógica & Fluxogramas (8 Etapas)
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
